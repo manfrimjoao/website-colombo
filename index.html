@@ -10,9 +10,9 @@
         <h1>T E C</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hospedagem.html">Hospedagem</a></li>
-                <li><a href="restaurantes.html">Restaurantes</a></li>
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="#hospedagem.html">Hospedagem</a></li>
+                <li><a href="#restaurantes.html">Restaurantes</a></li>
                 <li><a href="#eventos-show.html">Eventos/Show</a></li>
                 <li><a href="#turismo.html">Turismo</a></li>
                 <li><a href="#como-chegar.html">Como chegar</a></li>
@@ -27,31 +27,70 @@
             <p class="colombo-subtext"> Uma cidade encantadora que mistura história, 
                 natureza e cultura em um só lugar. </p>
         </div>
-        <section>
-            <h2>Conheça Colombo</h2>
-            <p>Colombo é um município brasileiro localizado no estado do Paraná, na Região Metropolitana de Curitiba. Conhecida por sua forte influência italiana, a cidade é um destino turístico rico em cultura e tradição.</p>
+        <section id="home">
+            <h2><a href="index.html">Home</a></h2>
+            <p class="subbio-links">Bem-vindo à página inicial do nosso site. Aqui você encontrará informações gerais sobre Colombo e o que você pode esperar encontrar em nosso guia turístico.</p>
         </section>
-
-        <section>
-            <h2>Economia</h2>
-            <p>Com uma economia diversificada, Colombo se destaca na produção de uvas e vinhos. A cidade é sede de diversas vinícolas que produzem algumas das melhores safras do país.</p>
+        
+        <section id="hospedagem">
+            <h2><a href="hospedagem.html">Hospedagem</a></h2>
+            <p class="subbio-links">Explore as opções de hospedagem em Colombo. De hotéis luxuosos a aconchegantes pousadas, há algo para todos os gostos e orçamentos.</p>
         </section>
-
-        <section>
-            <h2>Turismo</h2>
-            <p>A cidade abriga a Festa da Uva, uma celebração anual da colheita das uvas, e o Caminho do Vinho, um roteiro turístico que apresenta a cultura local, gastronomia e, claro, excelentes vinhos.</p>
+        
+        <section id="restaurantes">
+            <h2><a href="restaurantes.html">Restaurantes</a></h2>
+            <p class="subbio-links">Descubra a diversidade da gastronomia local. Aqui listamos alguns dos melhores restaurantes em Colombo, oferecendo uma variedade de pratos para satisfazer todos os paladares.</p>
         </section>
-
-        <section>
-            <h2>Herança italiana</h2>
-            <p>A influência italiana em Colombo é evidente em sua arquitetura, gastronomia e tradições culturais, contribuindo significativamente para a identidade da cidade.</p>
+        
+        <section id="eventos-show">
+            <h2><a href="eventos-show.html">Eventos/Show</a></h2>
+            <p class="subbio-links">Fique por dentro dos principais eventos e shows em Colombo. Não perca a oportunidade de participar de festas locais, shows ao vivo, e outros eventos culturais.</p>
         </section>
+        
+        <section id="turismo">
+            <h2><a href="turismo.html">Turismo</a></h2>
+            <p class="subbio-links">Explore as atrações turísticas de Colombo. Do encantador Caminho do Vinho à tradicional Festa da Uva, há sempre algo interessante para ver e fazer.</p>
+        </section>
+        
+        <section id="como-chegar">
+            <h2><a href="como-chegar.html">Como chegar</a></h2>
+            <p class="subbio-links">Planejando sua viagem para Colombo? Aqui fornecemos informações sobre como chegar à cidade por diferentes meios de transporte.</p>
+        </section>
+        
         <script>
-            </script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.querySelector(".back-to-top").style.display = "block";
+            } else {
+                document.querySelector(".back-to-top").style.display = "none";
+            }
+            }
+        </script>
     </main>
 
     <footer>
-        <!-- O rodapé do site vai aqui -->
-    </footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Endereço: PUCPR</p>
+            <p>Telefone: PUCPR</p>
+            <p>Email: PUCPR@PUCPR</p>
+          </div>
+          <div class="footer-section">
+            <h3>Links Úteis</h3>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+          <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+        <a href="#" class="back-to-top">Voltar ao topo</a>
+      </footer>            
 </body>
 </html>
