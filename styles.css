@@ -136,6 +136,14 @@ section h2 {
     margin-bottom: 15px;
 }
 
+section a {
+    color: black;
+}
+
+section a:hover {
+    color: rgb(0, 255, 0); /* Substitua #FF0000 pela cor que você deseja quando o mouse passa sobre o link */
+}
+
 .subbio-links {
     color: #000000;
     text-decoration: bold 2000px;
