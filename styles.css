@@ -6,6 +6,7 @@ html, body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: #25a244;  /* Verde claro */
+    background: linear-gradient(72deg, #1e7d35, #6ede8a);
 }
 
 .header-container {
@@ -106,6 +107,7 @@ main {
     margin: 0;  /* Remove a margem do main */
     background-color: #25a244;  /* Verde escuro */
     color: #6ede8a;  /* Verde claro */
+    background: linear-gradient(72deg, #1e7d35, #6ede8a);
 }
 
 main h2 {
@@ -122,7 +124,7 @@ section {
     margin-right: auto;
     margin-bottom: 30px;
     padding: 30px;
-    background: linear-gradient(to right, #6ede8a, #2ec754);
+    background: linear-gradient(72deg, #6ede8a, #2ec754);
     background-color: #6ede8a;  /* Verde claro */
     color: #25a244;  /* Verde escuro */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra nas seções */

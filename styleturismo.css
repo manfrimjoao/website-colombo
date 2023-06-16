@@ -5,7 +5,8 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #25a244;  /* Verde claro */
+    background-color: none;  /* Verde claro */
+    background: linear-gradient(72deg, #1e7d35, #6ede8a);
 }
 
 .header-container {
@@ -16,7 +17,6 @@ html, body {
     width: 100%;
     padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra nos cantos */
-    border-bottom: 2px solid black;
 }
 
 header h1 {
@@ -49,17 +49,193 @@ nav ul li a {
     text-decoration: none;
 }
 
+.colombo-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;  /* Altura da viewport */
+    margin: 0px;
+    margin-bottom: -75px;
+    overflow: hidden;  /* Esconde o que excede a área da div */
+}
+
+.colombo-image img {
+    width: 100%;
+    height: 89vh;  /* Altura da viewport */
+    object-fit: cover;  /* Faz a imagem cobrir todo o espaço */
+}
+
+
+.colombo-text {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    transform: translate(-100%, -50%);
+    color: #ffffff;
+    font-size: 3em;
+    font-family: 'Poppins';
+    align-items: center;
+    text-shadow: 2px 2px 3px black; /* Adicionando sombra ao texto */
+}
+
+.colombo-subtext {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-shadow: 2px 2px 3px black; /* Adicionando sombra ao texto */
+}
+
+.colombo-temperature {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translate(-75%, -50%);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-shadow: 2px 2px 3px black; /* Adicionando sombra ao texto */
+}
+
 main {
     margin: 0;  /* Remove a margem do main */
     background-color: #25a244;  /* Verde escuro */
+    background: linear-gradient(72deg, #1e7d35, #6ede8a);
     color: #6ede8a;  /* Verde claro */
 }
 
+
 main h2 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: #ffffff;  /* Branco */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 10px;
+  color: #ffffff;  /* Branco */
+  text-shadow: 2px 2px 3px black;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 800px;
+  height: 575px;
+  border-radius: 15px;
+  margin-top: 00px;
+  background-color: #6ede8a;
+  text-align: center;
+}
+
+.imagem{
+  display: flex;
+  justify-content: center;
+}
+.gruta{
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+main h3{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  
+}
+
+.text2{
+  text-align: center;
+  color: #25a244;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajuste a margem em relação a altura conforme necessário */
+}
+
+.link {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #25a244;
+  text-shadow: 2px 2px 3px black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+.link:hover {
+  background-color: #1e7d35; /* Cor de destaque ao passar o mouse */
+}
+
+.container2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card2{
+  width: 800px;
+  height: 575px;
+  border-radius: 15px;
+  margin-top: 100px;
+  background-color: #6ede8a;
+  text-align: center;
+  margin-left: 50px;
+  
+}
+.card3{
+  width: 800px;
+  height: 575px;
+  border-radius: 15px;
+  margin-top: 100px;
+  background-color: #6ede8a;
+  text-align: center;
+  margin-left: 200px;
+  
+}
+.container3{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card4{
+  width: 800px;
+  height: 575px;
+  border-radius: 15px;
+  margin-top: 100px;
+  background-color: #6ede8a;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.card5{
+  width: 800px;
+  height: 575px;
+  border-radius: 15px;
+  margin-top: 100px;
+  background-color: #6ede8a;
+  text-align: center;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+
 
 footer {
     background-color: #f8f8f8;  /* Verde escuro */
@@ -99,3 +275,7 @@ footer {
 .footer-section a:hover {
     text-decoration: underline;
 }
+
+
+
+ 
